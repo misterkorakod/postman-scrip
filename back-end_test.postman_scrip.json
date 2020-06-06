@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "c2b00e9b-5395-4bf9-824a-03d02ca7cad3",
+		"name": "back-end_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/showallemployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/showallemployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"showallemployee"
+					]
+				},
+				"description": "show all User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/addallEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n        \"userName\": \"elonshark\",\r\n        \"email\": \"davinci@mfec.com\",\r\n        \"nickName\": \"elon\",\r\n        \"session\": \"Logout\"\r\n    },{\r\n        \"userName\": \"stev\",\r\n        \"email\": \"job@mfec.com\",\r\n        \"nickName\": \"apple\",\r\n        \"session\": \"Logout\"\r\n    }]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addallEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addallEmployee"
+					]
+				},
+				"description": "add more than 1 user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/addemployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"userName\": \"android\",\r\n        \"email\": \"android@gmail.com\",\r\n        \"nickName\": \"google\",\r\n        \"session\": \"Logout\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addemployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addemployee"
+					]
+				},
+				"description": "register user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/showemployeeById/14",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 15,\r\n    \"userName\": \"earth\",\r\n    \"email\": \"acceptme@mfec.com\",\r\n    \"nickName\": \"data\",\r\n    \"session\": \"Login\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/showemployeeById/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"showemployeeById",
+						"15"
+					]
+				},
+				"description": "show user by id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 15,\r\n    \"userName\": \"earth\",\r\n    \"email\": \"acceptme@mfec.com\",\r\n    \"nickName\": \"data\",\r\n    \"session\": \"Login\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"update"
+					]
+				},
+				"description": "edit user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/delete/8",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 15,\r\n    \"userName\": \"earth\",\r\n    \"email\": \"acceptme@mfec.com\",\r\n    \"nickName\": \"data\",\r\n    \"session\": \"Login\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/delete/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete",
+						"8"
+					]
+				},
+				"description": "delete User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/showallcontent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/showallcontent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"showallcontent"
+					]
+				},
+				"description": "show all content"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/addcontent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\r\n        \"contentName\": \"Spring Framework \",\r\n        \"detail\": \"The Spring Framework is an application framework and inversion of control container for the Java platform.\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addcontent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addcontent"
+					]
+				},
+				"description": "add content"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/addallcontent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\t\r\n        \"contentName\": \"Java\",\r\n        \"detail\": \"This article is about the programming language. For the software platform, see Java (software platform).\"\r\n    },{\t\r\n        \"contentName\": \"Object-oriented \",\r\n        \"detail\": \"Object-oriented redirects here. For other meanings of object-oriented, see Object-orientation.\"\r\n    }]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addallcontent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addallcontent"
+					]
+				},
+				"description": "add more than 1 content"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/showcontentById/1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/showcontentById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"showcontentById",
+						"1"
+					]
+				},
+				"description": "show content by id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/updatecontent",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"contentId\": 1,\r\n    \"contentName\": \"Camera \",\r\n    \"detail\": \"I Love it\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/updatecontent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updatecontent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/deletecontent/4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/deletecontent/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deletecontent",
+						"4"
+					]
+				},
+				"description": "delete content"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
